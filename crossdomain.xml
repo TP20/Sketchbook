@@ -1,0 +1,10 @@
+
+<?xml version="1.0" ?>
+<cross-domain-policy>
+	<allow-access-from domain="pixlr.com" />
+    <allow-access-from domain="apps.pixlr.com" />
+   
+	<site-control permitted-cross-domain-policies="master-only"/>
+	<allow-http-request-headers-from domain="pixlr.com" headers="*" secure="true"/>
+    <allow-http-request-headers-from domain="apps.pixlr.com" headers="*" secure="true"/>
+</cross-domain-policy>

@@ -1,0 +1,7 @@
+@media screen and (max-width: 832px) {
+    #searchInput{ display:none; } 
+/*    #custom-navbar-section{ display:none; }*/
+/*    #custom-navbar-section {display:none;}*/
+    .videoSection {z:index:2; }
+/*    .videoSection {display:none}*/
+}

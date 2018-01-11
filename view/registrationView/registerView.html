@@ -1,0 +1,121 @@
+<!doctype html>
+<html>
+
+<head>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+
+<link rel="stylesheet" href="../../css/register.css">
+<script src="https://code.jquery.com/jquery-2.1.0.min.js"></script>
+<script src="../../js/registration.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Wire+One" rel="stylesheet">
+<!-- Latest compiled and minified JavaScript -->
+
+
+</head>
+
+<body style="background-image: url('../../css/background.jpg');  background-size: cover;">
+
+    <div id="registrationPage_nav">
+        <nav style ="font-family: 'Roboto', sans-serif;" class="navig" role="navigation">
+            <a href="../../index.php"> <li> Login </li> </a>
+            <a href="view/registrationView/registerView.html"> <li id="registration" > Register </li> </a>
+            <li  style ="font-family: 'Roboto', sans-serif;"> About </li>
+            <li> Careers </li>
+            <li> Services </li>
+        </nav>
+    </div>
+    <div class="col-sm-12">
+        <div class="col-sm-8">
+
+        </div>
+        <div class="col-sm-4 registrationForm">
+            <div class="col-sm-12">
+              <div>
+                <img id ="logo" src="../../css/Sketchbook.png">
+              </div>
+            </div>
+            <form action="../../controller/registrationController/registerUser.php" class="form-group" method="post">
+              <div class="col-sm-12 form-group form-alignment">
+                  <div class="col-sm-12">
+                      <p style="font-family: 'Wire One', sans-serif;"> First Name: </p>
+                  </div>
+                  <div class="col-sm-9 form-group" style="text-align:center">
+                    <input class="form-control" style="width: 100%" maxlength="10" id="fName" name="fName" autocomplete="off" type="text"> <br>
+                  </div>
+              </div>
+              <div class="col-sm-12 form-group form-alignment">
+                  <div class="col-sm-12">
+                      <p style="font-family: 'Wire One', sans-serif;"> Last Name: </p>
+                  </div>
+                  <div class="col-sm-9 form-group">
+                    <input class="form-control" maxlength="10" name="lName" id="lName" style="width:100%" autocomplete="off" type="text">
+                  </div>
+              </div>
+<!--
+              <div class="col-sm-12 form-group form-alignment">
+                  <div class="col-sm-12">
+                     <p> Location: </p>
+                  </div>
+                  <div class="col-sm-9 form-group">
+                     <input class="form-control" style ="width: 100%" id="location" maxlength="10" name="location" autocomplete="off" type="text">
+                  </div>
+              </div>
+              <div class="col-sm-12 form-group form-alignment">
+                  <div class="col-sm-12">
+                      <p> Phone Number: </p>
+                  </div>
+                  <div class="col-sm-9 form-group">
+                    <input class="form-control" maxlength="10" id="num"  pattern = "[0-9]" name="pNumber"  autocomplete="off" type="text">
+                  </div>
+              </div>
+-->
+              <div class="col-sm-12 form-group form-alignment">
+                  <div class="col-sm-12">
+                    <p style="font-family: 'Wire One', sans-serif;"> User Name: </p>
+                  </div>
+                  <div class="col-sm-9 form-group has-feedback user_input">
+                    <input class="form-control" maxlength="10" style="width:100%" id="user" onkeyup="validateUsername();" name="username" autocomplete="off" type="text">
+                    <p class="col-sm-12" id="username_error"> ** Username Exists ** </p>
+                  </div>
+              </div>
+              <div class="col-sm-12 form-group form-alignment">
+                  <div class="col-sm-12">
+                    <p style="font-family: 'Wire One', sans-serif;"> Password: </p>
+                  </div>
+                  <div class="col-sm-9 form-group password_input">
+                    <input class="form-control" maxlength="10" id="password_verify1" style="width:100%" name="password" autocomplete="off" type="password">
+                  </div>
+              </div>
+              <div class="col-sm-12 form-group form-alignment">
+                <div class ="col-sm-12">
+                    <p style="font-family: 'Wire One', sans-serif;"> Re-Type Password: </p>
+                </div>
+                <div class="col-sm-9 form-group password_verify">
+                    <input class="form-control" maxlength="10" id="password_verify2" onkeyup="passwordVerify()" name="pWord2" autocomplete="off" type="password">
+                    <p id="password_error">** Password does not match **</p>
+                </div>
+              </div>
+              <div class="col-sm-12 form-group">
+                  <div>
+                    <input id="registerButton" class="btn btn-warning col-sm-12 form-control" type="submit" value="Register">
+                  </div>
+              </div>
+            </form>
+        </div>
+    </div>
+    <div class="col-sm-12" id="footer">
+      <p style=" font-family: 'Roboto', sans-serif; color:white; display:block; text-align:center"> <span class="glyphicon glyphicon-copyright-mark" aria-hidden="true"></span>  2016 Thujan Co, LLC
+      <br> All Rights Reserved  </p>
+        <!-- <p style="color:white; display:block; text-align:center"> Powered by: Thujan Co
+        <br> All Right Reserved  <span class="glyphicon glyphicon-copyright-mark" aria-hidden="true"></span> </p> -->
+    </div>
+</body>
+
+</html>

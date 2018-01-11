@@ -1,0 +1,93 @@
+/*html,body{
+  height:100%;
+}*/
+
+.test {
+     background: none repeat scroll 0% 0% white;
+     border: medium solid white;
+  	 border-radius:8px;
+     margin: 0px auto;
+     display:block;
+     position: relative;
+     /*top:91px;*/
+/*     top: 200px;*/
+  	 /*padding: 1px;*/
+     width: 250px;
+}
+
+.uploadDialog {
+     background: none repeat scroll 0% 0% white;
+     border: medium solid white;
+  	 border-radius:8px;
+     margin: 0px auto;
+     position: relative;
+     top:91px;
+/*     top: 200px;*/
+  	 padding: 1px;
+     width: 250px;
+}
+
+li {
+     padding: 4px;
+}
+
+li:hover {
+
+     cursor: pointer;
+/*     font-size: 20px;*/
+    color: yellow !important;
+/*     text-decoration:underline;*/
+}
+
+#landingPage_nav {
+    float:right;
+    padding: 3%;
+}
+
+#landingPage_logo {
+    opacity:0.9;
+    margin:0px auto;
+    float:none;
+    display: block;
+    padding-bottom: 30px;
+}
+
+.navig li {
+     color: white;
+     display: inline;
+}
+
+#invalidInput {
+    display:none;
+    text-align:center;
+    color:red;
+}
+
+a:hover {
+     cursor: pointer;
+}
+
+#submitButton {
+    display:block;
+    width:100%;
+}
+#wrapper {
+  min-height:100%;
+}
+
+#footer {
+  bottom: 0;
+  height: 50px;
+  width:100%;
+  position:fixed;
+  margin: 0px auto;
+  display:block;
+}
+
+
+@media screen and (max-width: 400px) {
+  #headMenu { color: white; float: none ! important; padding-left: 20% ! important; position: relative ! important; top: 10% ! important; }
+  .test { position: relative; border: medium solid white; margin: 0px auto; width: 220px; padding-bottom: 2px; top: -60px; background: none repeat scroll 0% 0% white; }
+  .navig li { color: white; background: none repeat scroll 0% 0% blue; position: relative; top: 390px; left: -25px; display: block; border: 2px solid black; text-align: center; margin: 5px; padding: 0px; }
+  li:hover { padding: 0px; font-size: 14px; background: none repeat scroll 0% 0% grey; }
+}

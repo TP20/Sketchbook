@@ -1,0 +1,58 @@
+
+.registrationForm {
+    background: none repeat scroll 0 0 white;
+    border: medium solid white;
+/*    margin: 0 auto;*/
+    padding: 1px;
+    position: relative;
+}
+li {
+    padding: 4px;
+}
+li:hover {
+    color: yellow !important;
+    cursor: pointer; 
+/*    font-size: 20px;*/
+}
+.navig li {
+    color: white;
+    display: inline;
+}
+a:hover {
+    cursor: pointer;
+}
+
+.form-alignment{
+/*    margin-left:10px;*/
+    margin-left:10%;
+}
+
+#registerButton {
+    display:block; 
+    margin:0px auto; 
+    width:200px; 
+    float:none;
+}
+#logo {
+    opacity:0.9; 
+    display:block; 
+    margin:0px auto; 
+    padding-bottom:30px; 
+    float:none;
+}
+
+#password_error {
+    color:red; 
+    display:none;
+    text-align:center; 
+}
+#username_error {
+    text-align:center; 
+    color: red; 
+    display:none;
+}
+
+#registrationPage_nav {
+    float:right; 
+    padding: 3%;
+}

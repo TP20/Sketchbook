@@ -1,0 +1,17 @@
+@media screen and (max-width: 970px) {
+    .imageSection {display:none;}
+}
+
+#uploadText {
+  display:none;
+}
+
+#selectImage_text {
+    text-align: center;
+    display:none;
+}
+
+#uploadImage_text {
+    text-align: center;
+    display:none;
+}
