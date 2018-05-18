@@ -2,7 +2,7 @@
     Class Pictures {
 
         public static function displayRecentlyAdded($username, $page) {
-            require_once ($_SERVER['DOCUMENT_ROOT']."/VidTube_organize/model/queries.php");
+            require_once ($_SERVER['DOCUMENT_ROOT']."/model/queries.php");
 
             $results = Queries::recentlyUploaded();
 
@@ -12,7 +12,7 @@
                  //         <div class='col-sm-12'> <p> ".$row['image']."</p> </div> </div>";
               //   echo "<div class='col-sm-2 video' onclick = \"location.href = '/VidTube_organize/controller/clickedImage.php?username=".$_GET['username']."&image=".$row['image']."'\" style= 'margin-bottom:2px; background-image: url(../Images/".$row['image']."); height:100px;'> </div>
               //            ";
-                echo " <div class='col-sm-2 video' onclick = \"location.href = '/VidTube_organize/controller/clickedImage.php?username=".$_GET['username']."&image=".$row['image']."&title=".$row['title']."'\">
+                echo " <div class='col-sm-2 video' onclick = \"location.href = '/controller/clickedImage.php?username=".$_GET['username']."&image=".$row['image']."&title=".$row['title']."'\">
                  <img height='100px' width=100% src = '../Images/".$row['image']."'>
                  <p style='font-size:11px'><b>".$row['title']."</b> <br><em> Uploaded By: </em>".Queries::searchImageAuthor($row['title'])."<br> <em>Views: </em> ".Queries::getViews($row['image'])." </p>
                  </div>
@@ -20,14 +20,14 @@
                 }
 
                 if ($page == 'clickedPictureView.php') {
-                    echo "<div class='col-sm-6 video' onclick = \"location.href= '/VidTube_organize/controller/clickedImage.php?username=".$_GET['username']."&image=".$row['image']."'\" style='background-image: url(../Images/".$row['image'].");'>
+                    echo "<div class='col-sm-6 video' onclick = \"location.href= '/controller/clickedImage.php?username=".$_GET['username']."&image=".$row['image']."'\" style='background-image: url(../Images/".$row['image'].");'>
                          </div>";
                 }
             }
         }
 
         public static function displayRecentlyAdded_editPage($username) {
-            require_once ($_SERVER['DOCUMENT_ROOT']."/VidTube_organize/model/queries.php");
+            require_once ($_SERVER['DOCUMENT_ROOT']."/model/queries.php");
 
             $results = Queries::recentlyViewed();
 
@@ -59,11 +59,11 @@
         }
 
         public static function displayRecentlyViewed_clickedPage() {
-            require_once ($_SERVER['DOCUMENT_ROOT']."/VidTube_organize/model/queries.php");
+            require_once ($_SERVER['DOCUMENT_ROOT']."/model/queries.php");
 
             $results = Queries::recentlyViewed();
             while ($row = $results -> fetch_assoc()) {
-                echo "<div class='col-sm-12 videoList' style='margin-bottom: 15px;' onclick = \"location.href = '/VidTube_organize/controller/clickedImage.php?username=".$_GET['username']."&image=".$row['image']."&title=".$row['title']."'\">
+                echo "<div class='col-sm-12 videoList' style='margin-bottom: 15px;' onclick = \"location.href = '/controller/clickedImage.php?username=".$_GET['username']."&image=".$row['image']."&title=".$row['title']."'\">
                       <img class='col-sm-6' src = '../Images/".$row['image']."' style= 'overflow: hidden;  width:180px; height:100px;'>
                       <p class='col-sm-5' style='font-size:10px'><b>".$row['title']."</b><br>Uploaded by: ".Queries::searchImageAuthor($row['title'])."<br>Views: ".Queries::getViews($row['image'])."</p> </div> ";
             }
@@ -71,7 +71,7 @@
         }
 
         public static function displayRecentlyViewed($username) {
-            require_once ($_SERVER['DOCUMENT_ROOT']."/VidTube_organize/model/queries.php");
+            require_once ($_SERVER['DOCUMENT_ROOT']."/model/queries.php");
 
             $results = Queries::recentlyViewed();
 
@@ -85,7 +85,7 @@
 //            }
 
 
-                  echo " <div class='col-sm-2 video'  onclick = \"location.href= '/VidTube_organize/controller/clickedImage.php?username=".$_GET['username']."&image=".$row['image']."&title=".$row['title']."'\">
+                  echo " <div class='col-sm-2 video'  onclick = \"location.href= '/controller/clickedImage.php?username=".$_GET['username']."&image=".$row['image']."&title=".$row['title']."'\">
                  <img height='100px' width='100%' src = '../Images/".$row['image']."'>
                  <p style='font-size:11px'><b>".$row['title']." </b> <br> <em>Uploaded By: </em> ".Queries::searchImageAuthor($row['title'])."<br> <em>Views: </em> ".Queries::getViews($row['image'])." </p>
                  </div>
@@ -104,7 +104,7 @@
           }
 
           public static function displayUserUploaded($username) {
-             require_once ($_SERVER['DOCUMENT_ROOT']."/VidTube_organize/model/queries.php");
+             require_once ($_SERVER['DOCUMENT_ROOT']."/model/queries.php");
 
              $results = Queries::uploadedByUser($username);
 

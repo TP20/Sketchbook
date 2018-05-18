@@ -59,20 +59,20 @@
         <div class="col-sm-12">
             <h1 id ="uploadText" style="text-align:center;"> Uploaded Images </h1>
             <!-- <?php
-                require_once($_SERVER["DOCUMENT_ROOT"]."/VidTube_organize/controller/editPictureController.php");
+                require_once($_SERVER["DOCUMENT_ROOT"]."/controller/editPictureController.php");
                 echo EditPictureController::checkUploadedVideo($_GET['username']);
              ?> -->
         </div>
         <div class="col-sm-12">
             <?php
-                require_once($_SERVER["DOCUMENT_ROOT"]."/VidTube_organize/controller/pictureController.php");
+                require_once($_SERVER["DOCUMENT_ROOT"]."/controller/pictureController.php");
                 //  Pictures::displayRecentlyAdded_editPage($_GET['username']);
                 Pictures::displayUserUploaded($_GET['username']);
             ?>
         </div>
     </div>
     <?php
-        require_once($_SERVER["DOCUMENT_ROOT"]."/VidTube_organize/controller/editPictureController.php");
+        require_once($_SERVER["DOCUMENT_ROOT"]."/controller/editPictureController.php");
         echo EditPictureController::checkUploadedVideo($_GET['username']);
      ?>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
@@ -82,7 +82,7 @@
 <script type="text/javascript" src ="../js/pixlr.js"></script>
 <script type="text/javascript" src ="../js/editPicture.js"></script>
 <script type ="text/javascript">
-     pixlr.overlay.show({image:<?php echo json_encode($_GET['image']); ?>, title:<?php echo json_encode($_GET['title']); ?>, redirect:'false', locktitle:'true', target: "http://localhost:8080/VidTube_organize/controller/uploadImage.php", locktype:'true', wmode:'transparent', locktarget:'true', method:'get', service:'editor'});
+     pixlr.overlay.show({image:<?php echo json_encode($_GET['image']); ?>, title:<?php echo json_encode($_GET['title']); ?>, redirect:'false', locktitle:'true', target: "http://thujan-sketchbook.000webhostapp.com/controller/uploadImage.php", locktype:'true', wmode:'transparent', locktarget:'true', method:'get', service:'editor'});
 </script>
 
 </body>

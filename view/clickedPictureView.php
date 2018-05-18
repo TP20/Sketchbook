@@ -62,7 +62,7 @@
         <div class="col-sm-12" style =" border:rgb(239,239,239) solid; overflow:auto; height:390px;">
 <!--        <div class="col-sm-12">-->
             <?php
-                require_once($_SERVER["DOCUMENT_ROOT"]."/VidTube_organize/controller/pictureController.php");
+                require_once($_SERVER["DOCUMENT_ROOT"]."/controller/pictureController.php");
                 Pictures::displayRecentlyViewed_clickedPage();
             ?>
         </div>
@@ -84,7 +84,7 @@
                 </form>
                 <div id="existingComments" style ="overflow-y:auto; height:200px ; margin:2%; margin:2%;">
                     <?php
-                        require_once($_SERVER["DOCUMENT_ROOT"]."/VidTube_organize/controller/jsonController.php");
+                        require_once($_SERVER["DOCUMENT_ROOT"]."/controller/jsonController.php");
                         Json::printComments();
                     ?>
                 </div>
