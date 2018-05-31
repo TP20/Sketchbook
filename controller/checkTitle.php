@@ -1,5 +1,5 @@
 <?php
-    include $_SERVER["DOCUMENT_ROOT"]."/VidTube_organize/model/queries.php";
+    include $_SERVER["DOCUMENT_ROOT"]."/model/queries.php";
 
     $results = Queries::searchTitle($_GET['title']);
     $num_results = $results ->num_rows;

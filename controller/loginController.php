@@ -3,15 +3,15 @@
         
         public static function isUserValid($username, $password) {
       //        include_once "./../model/dbconnect.php";
-//echo $_SERVER["DOCUMENT_ROOT"]."/VidTube_organize/model/dbconnect.php";
-              include_once $_SERVER["DOCUMENT_ROOT"]."/VidTube_organize/model/dbconnect.php";
-              include_once $_SERVER["DOCUMENT_ROOT"]."/VidTube_organize/model/queries.php";
+    //echo $_SERVER["DOCUMENT_ROOT"]."/VidTube_organize/model/dbconnect.php";
+              include_once $_SERVER["DOCUMENT_ROOT"]."/model/dbconnect.php";
+              include_once $_SERVER["DOCUMENT_ROOT"]."/model/queries.php";
             
             $results= Queries::verifyCredentials($username, $password);                    
             $num_result = $results -> num_rows;
             $VALID_CREDENTIALS = $num_result > 0;
          //   $URL_HOMEPAGEVIEW = "http://thujan-sketchbook.000webhostapp.com/view/homePageView.php?username=".$_POST['username'];
-           $URL_HOMEPAGEVIEW = "http://localhost:8080/VidTube_organize/view/homePageView.php?username=".$_POST['username'];
+           $URL_HOMEPAGEVIEW = "http://sketchbook2.000webhostapp.com/view/homePageView.php?username=".$_POST['username'];
 
             if ($VALID_CREDENTIALS) {                
                 header("Location: ".$URL_HOMEPAGEVIEW);

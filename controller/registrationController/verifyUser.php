@@ -1,6 +1,6 @@
 <?php 
 
-    require_once ($_SERVER["DOCUMENT_ROOT"]."/VidTube_organize/model/dbconnect.php");
+    require_once ($_SERVER["DOCUMENT_ROOT"]."/model/dbconnect.php");
     
     $user = $_GET['username'];
 

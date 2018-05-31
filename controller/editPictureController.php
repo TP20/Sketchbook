@@ -2,7 +2,7 @@
 
   Class EditPictureController {
     public static function checkUploadedVideo($user) {
-      include_once $_SERVER["DOCUMENT_ROOT"]."/VidTube_Organize/model/queries.php";
+      include_once $_SERVER["DOCUMENT_ROOT"]."/model/queries.php";
       $results = Queries::uploadedByUser($user);
       $RESULTS_RETURNED = $results -> num_rows != 0;
 
