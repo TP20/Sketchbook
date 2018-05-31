@@ -11,9 +11,9 @@
             $num_result = $results -> num_rows;
             $VALID_CREDENTIALS = $num_result > 0;
          //   $URL_HOMEPAGEVIEW = "http://thujan-sketchbook.000webhostapp.com/view/homePageView.php?username=".$_POST['username'];
-           $URL_HOMEPAGEVIEW = "http://sketchbook2.000webhostapp.com/view/homePageView.php?username=".$_POST['username'];
+           $URL_HOMEPAGEVIEW = "https://sketchbook2.000webhostapp.com/view/homePageView.php?username=".$_POST['username'];
 
-            if ($VALID_CREDENTIALS) {                
+            if ($VALID_CREDENTIALS) {   
                 header("Location: ".$URL_HOMEPAGEVIEW);
             }        
             else {

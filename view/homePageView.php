@@ -61,7 +61,7 @@
             </div>
             <div class ="col-sm-12" id="recentlyViewedVideos">
                 <?php
-                    require_once($_SERVER["DOCUMENT_ROOT"]."/VidTube_organize/controller/pictureController.php");
+                    require_once($_SERVER["DOCUMENT_ROOT"]."/controller/pictureController.php");
                     Pictures::displayRecentlyViewed($_GET['username']);
                 ?>
             </div>
@@ -72,7 +72,7 @@
             </div>
             <div class ="col-sm-12" id="recentlyAddedVideos">
                 <?php
-                    require_once($_SERVER["DOCUMENT_ROOT"]."/VidTube_organize/controller/pictureController.php");
+                    require_once($_SERVER["DOCUMENT_ROOT"]."/controller/pictureController.php");
                     Pictures::displayRecentlyAdded($_GET['username'],'homePageView.php');
                 ?>
             </div>
