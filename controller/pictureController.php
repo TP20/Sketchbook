@@ -2,7 +2,7 @@
     Class Pictures {
 
         public static function displayRecentlyAdded($username, $page) {
-            require_once ($_SERVER['DOCUMENT_ROOT']."/model/queries.php");
+            require_once ($_SERVER['DOCUMENT_ROOT']."/VidTube_organize/model/queries.php");
 
             $results = Queries::recentlyUploaded();
 
@@ -27,7 +27,7 @@
         }
 
         public static function displayRecentlyAdded_editPage($username) {
-            require_once ($_SERVER['DOCUMENT_ROOT']."/model/queries.php");
+            require_once ($_SERVER['DOCUMENT_ROOT']."/VidTube_organize/model/queries.php");
 
             $results = Queries::recentlyViewed();
 
@@ -59,7 +59,7 @@
         }
 
         public static function displayRecentlyViewed_clickedPage() {
-            require_once ($_SERVER['DOCUMENT_ROOT']."/model/queries.php");
+            require_once ($_SERVER['DOCUMENT_ROOT']."/VidTube_organize/model/queries.php");
 
             $results = Queries::recentlyViewed();
             while ($row = $results -> fetch_assoc()) {
@@ -71,7 +71,7 @@
         }
 
         public static function displayRecentlyViewed($username) {
-            require_once ($_SERVER['DOCUMENT_ROOT']."/model/queries.php");
+            require_once ($_SERVER['DOCUMENT_ROOT']."/VidTube_organize/model/queries.php");
 
             $results = Queries::recentlyViewed();
 
@@ -104,7 +104,7 @@
           }
 
           public static function displayUserUploaded($username) {
-             require_once ($_SERVER['DOCUMENT_ROOT']."/model/queries.php");
+             require_once ($_SERVER['DOCUMENT_ROOT']."/VidTube_organize/model/queries.php");
 
              $results = Queries::uploadedByUser($username);
 

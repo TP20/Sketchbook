@@ -1,6 +1,6 @@
 <?php
 
-    include_once $_SERVER["DOCUMENT_ROOT"].'/model/queries.php';
+    include_once $_SERVER["DOCUMENT_ROOT"].'/VidTube_organize/model/queries.php';
     //$upload =1;
     //$allowedext= array("jpg", "png");
     $file_dir = "../Images";

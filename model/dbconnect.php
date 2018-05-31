@@ -1,9 +1,9 @@
 <?php 
 
-    $dbhost = "localhost";
-    $dbusername = "id4276557_sketchbook_test";
-    $dbpassword = "test123123";
-    $dbname = "id4276557_sketchbook";
+    $dbhost = "127.0.0.1";
+    $dbusername = "root";
+    $dbpassword = "root";
+    $dbname = "vidtube";
 
     $conn = mysqli_connect($dbhost, $dbusername, $dbpassword, $dbname);
 

@@ -1,6 +1,6 @@
 <?php
 
-include_once $_SERVER["DOCUMENT_ROOT"]."/model/queries.php";
+include_once $_SERVER["DOCUMENT_ROOT"]."/VidTube_organize/model/queries.php";
 
 $results = Queries::search($_GET['searchVid']); 
 $RESULTS_RETURNED = $results -> num_rows != 0;
