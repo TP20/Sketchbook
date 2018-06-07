@@ -1,4 +1,5 @@
 <!doctype html>
+<html>
 <head>
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
@@ -9,7 +10,7 @@
     <link rel ="stylesheet" href ="../css/editPage.css">
 </head>
 
-<body class="zoom-moz">
+<body>
 
      <nav class="navbar navbar-inverse navbar-fixed-top">
          <span style ="text-align:center; color:white;" onclick = "navbar.display('.videoSection')" class= "glyphicon glyphicon-align-justify navbar-brand custom-nav-toggle"> </span>
@@ -59,20 +60,20 @@
         <div class="col-sm-12">
             <h1 id ="uploadText" style="text-align:center;"> Uploaded Images </h1>
             <!-- <?php
-                require_once($_SERVER["DOCUMENT_ROOT"]."/controller/editPictureController.php");
+                require_once($_SERVER["DOCUMENT_ROOT"]."/VidTube_organize/controller/editPictureController.php");
                 echo EditPictureController::checkUploadedVideo($_GET['username']);
              ?> -->
         </div>
         <div class="col-sm-12">
             <?php
-                require_once($_SERVER["DOCUMENT_ROOT"]."/controller/pictureController.php");
+                require_once($_SERVER["DOCUMENT_ROOT"]."/VidTube_organize/controller/pictureController.php");
                 //  Pictures::displayRecentlyAdded_editPage($_GET['username']);
                 Pictures::displayUserUploaded($_GET['username']);
             ?>
         </div>
     </div>
     <?php
-        require_once($_SERVER["DOCUMENT_ROOT"]."/controller/editPictureController.php");
+        require_once($_SERVER["DOCUMENT_ROOT"]."/VidTube_organize/controller/editPictureController.php");
         echo EditPictureController::checkUploadedVideo($_GET['username']);
      ?>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
@@ -82,7 +83,7 @@
 <script type="text/javascript" src ="../js/pixlr.js"></script>
 <script type="text/javascript" src ="../js/editPicture.js"></script>
 <script type ="text/javascript">
-     pixlr.overlay.show({image:<?php echo json_encode($_GET['image']); ?>, title:<?php echo json_encode($_GET['title']); ?>, redirect:'false', locktitle:'true', target: "http://thujan-sketchbook.000webhostapp.com/controller/uploadImage.php", locktype:'true', wmode:'transparent', locktarget:'true', method:'get', service:'editor'});
+     pixlr.overlay.show({image:<?php echo json_encode($_GET['image']); ?>, title:<?php echo json_encode($_GET['title']); ?>, redirect:'false', locktitle:'true', target: "https://sketchbook2.000webhostapp.com/controller/uploadImage.php", locktype:'true', wmode:'transparent', locktarget:'true', method:'get', service:'editor'});
 </script>
 
 </body>

@@ -12,7 +12,7 @@
                  //         <div class='col-sm-12'> <p> ".$row['image']."</p> </div> </div>";
               //   echo "<div class='col-sm-2 video' onclick = \"location.href = '/VidTube_organize/controller/clickedImage.php?username=".$_GET['username']."&image=".$row['image']."'\" style= 'margin-bottom:2px; background-image: url(../Images/".$row['image']."); height:100px;'> </div>
               //            ";
-                echo " <div class='col-sm-2 video' onclick = \"location.href = '/controller/clickedImage.php?username=".$_GET['username']."&image=".$row['image']."&title=".$row['title']."'\">
+                echo " <div class='col-sm-2 video' onclick = \"location.href = '/VidTube_organize/controller/clickedImage.php?username=".$_GET['username']."&image=".$row['image']."&title=".$row['title']."'\">
                  <img height='100px' width=100% src = '../Images/".$row['image']."'>
                  <p style='font-size:11px'><b>".$row['title']."</b> <br><em> Uploaded By: </em>".Queries::searchImageAuthor($row['title'])."<br> <em>Views: </em> ".Queries::getViews($row['image'])." </p>
                  </div>
@@ -20,7 +20,7 @@
                 }
 
                 if ($page == 'clickedPictureView.php') {
-                    echo "<div class='col-sm-6 video' onclick = \"location.href= '/controller/clickedImage.php?username=".$_GET['username']."&image=".$row['image']."'\" style='background-image: url(../Images/".$row['image'].");'>
+                    echo "<div class='col-sm-6 video' onclick = \"location.href= '/VidTube_organize/controller/clickedImage.php?username=".$_GET['username']."&image=".$row['image']."'\" style='background-image: url(../Images/".$row['image'].");'>
                          </div>";
                 }
             }
@@ -34,7 +34,7 @@
             while ($row = $results -> fetch_assoc()) {
 //               echo "<div class='col-sm-2 video' onclick = \"location.href='editPictureView.php?username=".$username."&title=testingJson&image=http://sketchapp-thujan.rhcloud.com/Images/".$row['image']."'\" style= 'overflow: hidden; background-image: url(../Images/".$row['image']."); width:150px; height:100px;'> </div>
 //                      ";
-                echo "<div class='col-sm-2 video' style =' width:150px; height:100px;' onclick = \"location.href='editPictureView.php?username=".$username."&title=".$row['image']."&image=http://sketchapp-thujan.rhcloud.com/Images/".$row['image']."'\">
+                echo "<div class='col-sm-2 video' style =' width:150px; height:100px;' onclick = \"location.href='editPictureView.php?username=".$username."&title=".$row['image']."&image=https://sketchbook2.000webhostapp.com/Images/".$row['image']."'\">
                         <img height='80px' width='100%' src = '../Images/".$row['image']."'>
                         <p style ='font-size:11px'><b>".$row['title']."</b></p>
                       </div>
@@ -63,7 +63,7 @@
 
             $results = Queries::recentlyViewed();
             while ($row = $results -> fetch_assoc()) {
-                echo "<div class='col-sm-12 videoList' style='margin-bottom: 15px;' onclick = \"location.href = '/controller/clickedImage.php?username=".$_GET['username']."&image=".$row['image']."&title=".$row['title']."'\">
+                echo "<div class='col-sm-12 videoList' style='margin-bottom: 15px;' onclick = \"location.href = '/VidTube_organize/controller/clickedImage.php?username=".$_GET['username']."&image=".$row['image']."&title=".$row['title']."'\">
                       <img class='col-sm-6' src = '../Images/".$row['image']."' style= 'overflow: hidden;  width:180px; height:100px;'>
                       <p class='col-sm-5' style='font-size:10px'><b>".$row['title']."</b><br>Uploaded by: ".Queries::searchImageAuthor($row['title'])."<br>Views: ".Queries::getViews($row['image'])."</p> </div> ";
             }
@@ -85,7 +85,7 @@
 //            }
 
 
-                  echo " <div class='col-sm-2 video'  onclick = \"location.href= '/controller/clickedImage.php?username=".$_GET['username']."&image=".$row['image']."&title=".$row['title']."'\">
+                  echo " <div class='col-sm-2 video'  onclick = \"location.href= '/VidTube_organize/controller/clickedImage.php?username=".$_GET['username']."&image=".$row['image']."&title=".$row['title']."'\">
                  <img height='100px' width='100%' src = '../Images/".$row['image']."'>
                  <p style='font-size:11px'><b>".$row['title']." </b> <br> <em>Uploaded By: </em> ".Queries::searchImageAuthor($row['title'])."<br> <em>Views: </em> ".Queries::getViews($row['image'])." </p>
                  </div>
@@ -110,7 +110,7 @@
 
              while ($row = $results -> fetch_assoc()) {
 
-                echo "<div class='col-sm-2 video' style =' width:150px; height:100px;' onclick = \"location.href='editPictureView.php?username=".$username."&title=".$row['image']."&image=http://sketchapp-thujan.rhcloud.com/Images/".$row['image']."'\">
+                echo "<div class='col-sm-2 video' style =' width:150px; height:100px;' onclick = \"location.href='editPictureView.php?username=".$username."&title=".$row['image']."&image=https://sketchbook2.000webhostapp.com/Images/".$row['image']."'\">
                         <img height='80px' width='100%' src = '../Images/".$row['image']."'>
                         <p style ='font-size:11px'><b>".$row['title']."</b></p>
                       </div>

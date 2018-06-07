@@ -6,9 +6,10 @@
 <!-- Optional theme -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
 <link rel ="stylesheet" href ="../css/vidPage.css">
+
 </head>
 
-<body class="zoom-moz">
+<body>
 
     <nav class="navbar navbar-inverse navbar-fixed-top">
          <span style ="text-align:center; color:white;" onclick = "navbar.display('.videoSection')" class= "glyphicon glyphicon-align-justify navbar-brand custom-nav-toggle"> </span>
@@ -62,7 +63,7 @@
         <div class="col-sm-12" style =" border:rgb(239,239,239) solid; overflow:auto; height:390px;">
 <!--        <div class="col-sm-12">-->
             <?php
-                require_once($_SERVER["DOCUMENT_ROOT"]."/controller/pictureController.php");
+                require_once($_SERVER["DOCUMENT_ROOT"]."/VidTube_organize/controller/pictureController.php");
                 Pictures::displayRecentlyViewed_clickedPage();
             ?>
         </div>
@@ -84,7 +85,7 @@
                 </form>
                 <div id="existingComments" style ="overflow-y:auto; height:200px ; margin:2%; margin:2%;">
                     <?php
-                        require_once($_SERVER["DOCUMENT_ROOT"]."/controller/jsonController.php");
+                        require_once($_SERVER["DOCUMENT_ROOT"]."/VidTube_organize/controller/jsonController.php");
                         Json::printComments();
                     ?>
                 </div>
@@ -93,9 +94,9 @@
     </div>
 
 <!-- Latest compiled and minified JavaScript -->
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-<script type="text/javascript" src="controller/createJSON.js"></script>
+<script type="text/javascript" src="../controller/createJSON.js"></script>
 <script type ="text/javascript" src="../js/vidPage.js"></script>
 <script type ="text/javascript" src="../js/navbar.js"></script>
 <script type="text/javascript" src ="../js/addComment.js"></script>
