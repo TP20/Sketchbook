@@ -9,7 +9,7 @@
     <link rel ="stylesheet" href ="../css/editPage.css">
 </head>
 
-<body class="zoom-moz">
+<body>
 
      <nav class="navbar navbar-inverse navbar-fixed-top">
          <span style ="text-align:center; color:white;" onclick = "navbar.display('.videoSection')" class= "glyphicon glyphicon-align-justify navbar-brand custom-nav-toggle"> </span>
@@ -82,7 +82,7 @@
 <script type="text/javascript" src ="../js/pixlr.js"></script>
 <script type="text/javascript" src ="../js/editPicture.js"></script>
 <script type ="text/javascript">
-     pixlr.overlay.show({image:<?php echo json_encode($_GET['image']); ?>, title:<?php echo json_encode($_GET['title']); ?>, redirect:'false', locktitle:'true', target: "http://thujan-sketchbook.000webhostapp.com/controller/uploadImage.php", locktype:'true', wmode:'transparent', locktarget:'true', method:'get', service:'editor'});
+     pixlr.overlay.show({image:<?php echo json_encode($_GET['image']); ?>, title:<?php echo json_encode($_GET['title']); ?>, redirect:'false', locktitle:'true', target: "https://sketchbook2.000webhostapp.com/controller/uploadImage.php", locktype:'true', wmode:'transparent', locktarget:'true', method:'get', service:'editor'});
 </script>
 
 </body>

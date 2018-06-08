@@ -9,6 +9,6 @@ function addComment() {
     }
     var commentText = document.getElementById("commentTextArea").value;
 
-    ajaxRequest.open("GET", "../controller/jsonController.php?comment="+commentText+"&image=".GET['image']."&title="+$_GET['title']+"&username="+$_GET['username']);
+    ajaxRequest.open("GET", "../controller/jsonController.php?comment="+commentText+"&image=".GET['image']+"&title="+$_GET['title']+"&username="+$_GET['username']);
     ajaxRequest.send();
 }

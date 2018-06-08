@@ -8,7 +8,7 @@
 <link rel ="stylesheet" href ="../css/vidPage.css">
 </head>
 
-<body class="zoom-moz">
+<body>
 
     <nav class="navbar navbar-inverse navbar-fixed-top">
          <span style ="text-align:center; color:white;" onclick = "navbar.display('.videoSection')" class= "glyphicon glyphicon-align-justify navbar-brand custom-nav-toggle"> </span>
@@ -93,9 +93,9 @@
     </div>
 
 <!-- Latest compiled and minified JavaScript -->
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-<script type="text/javascript" src="controller/createJSON.js"></script>
+<script type="text/javascript" src="../controller/createJSON.js"></script>
 <script type ="text/javascript" src="../js/vidPage.js"></script>
 <script type ="text/javascript" src="../js/navbar.js"></script>
 <script type="text/javascript" src ="../js/addComment.js"></script>

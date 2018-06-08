@@ -34,7 +34,7 @@
             while ($row = $results -> fetch_assoc()) {
 //               echo "<div class='col-sm-2 video' onclick = \"location.href='editPictureView.php?username=".$username."&title=testingJson&image=http://sketchapp-thujan.rhcloud.com/Images/".$row['image']."'\" style= 'overflow: hidden; background-image: url(../Images/".$row['image']."); width:150px; height:100px;'> </div>
 //                      ";
-                echo "<div class='col-sm-2 video' style =' width:150px; height:100px;' onclick = \"location.href='editPictureView.php?username=".$username."&title=".$row['image']."&image=http://sketchapp-thujan.rhcloud.com/Images/".$row['image']."'\">
+                echo "<div class='col-sm-2 video' style =' width:150px; height:100px;' onclick = \"location.href='editPictureView.php?username=".$username."&title=".$row['image']."&image=https://sketchbook2.000webhostapp.com/Images/".$row['image']."'\">
                         <img height='80px' width='100%' src = '../Images/".$row['image']."'>
                         <p style ='font-size:11px'><b>".$row['title']."</b></p>
                       </div>
@@ -110,7 +110,7 @@
 
              while ($row = $results -> fetch_assoc()) {
 
-                echo "<div class='col-sm-2 video' style =' width:150px; height:100px;' onclick = \"location.href='editPictureView.php?username=".$username."&title=".$row['image']."&image=http://sketchapp-thujan.rhcloud.com/Images/".$row['image']."'\">
+                echo "<div class='col-sm-2 video' style =' width:150px; height:100px;' onclick = \"location.href='editPictureView.php?username=".$username."&title=".$row['image']."&image=https://sketchbook2.000webhostapp.com/Images/".$row['image']."'\">
                         <img height='80px' width='100%' src = '../Images/".$row['image']."'>
                         <p style ='font-size:11px'><b>".$row['title']."</b></p>
                       </div>
