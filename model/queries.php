@@ -101,7 +101,7 @@
          include $_SERVER["DOCUMENT_ROOT"]."/model/dbconnect.php";
 
 //         $sql = "Insert into registration values ('".$fName."','".$lName."','".$location."',".$pNumber.",'".$username."','".$password."')";
-         $sql = "Insert into registration values ('".$fName."','".$lName."',' ',' ','".$username."','".$password."')";
+         $sql = "Insert into registration values ('".$fName."','".$lName."',' ',0,'".$username."','".$password."')";
          $conn-> query($sql);
      }
 
