@@ -15,10 +15,10 @@ class Register {
         if ($FIELDS_ARE_SET && $FIELDS_NOT_BLANK) {
 //            Queries::registerUser($_POST['fName'] , $_POST['lName'] , $_POST['location'] , $_POST['pNumber'] , $_POST['username'] , $_POST['password']);
             Queries::registerUser($_POST['fName'] , $_POST['lName'] , $_POST['username'] , $_POST['password']);
-            header("Location: http://thujan-sketchbook.000webhostapp.com/view/homePageView.php?username=".$_POST['username']."");
+            header("Location: http://localhost:8080/VidTube_organize/view/homePageView.php?username=".$_POST['username']."");
         }        
         else {
-           header("Location: http://thujan-sketchbook.000webhostapp.com/view/registrationView/registerView.html");
+           header("Location: http://localhost:8080/VidTube_organize/view/registrationView/registerView.html");
         }
     }
 }
