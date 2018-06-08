@@ -25,7 +25,7 @@
     <div class="col-sm-2" id="custom-navbar-section" style="position:fixed; display:block;">
         <div  id="custom-navbar">
            <div class="col-sm-12">
-                <div class="col-sm-12 custom-navbar-tabs" onclick="location.href ='homepageView.php?username=<?php echo $_GET['username'] ?>'">
+                <div class="col-sm-12 custom-navbar-tabs" onclick="location.href ='homePageView.php?username=<?php echo $_GET['username'] ?>'">
                     <div class="col-sm-12 custom-navbar-text">
                        <span class="glyphicon glyphicon-home"> Home </span>
                     </div>
@@ -80,7 +80,7 @@
 <!--    </div>-->
     
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script type ="text/javascript" src="../js/vidPage.js"></script>
 <script type ="text/javascript" src="../js/navbar.js"></script>
     <script type ="text/javascript" src="../js/upload.js"></script>

@@ -19,7 +19,7 @@
      <div class="col-sm-2" id="custom-navbar-section" style="position:fixed; display:block;">
         <div  id="custom-navbar">
            <div class="col-sm-12">
-                <div class="col-sm-12 custom-navbar-tabs" onclick="location.href ='homepageView.php?username=<?php echo $_GET['username'] ?>'">
+                <div class="col-sm-12 custom-navbar-tabs" onclick="location.href ='homePageView.php?username=<?php echo $_GET['username'] ?>'">
                     <div class="col-sm-12 custom-navbar-text">
                        <span class="glyphicon glyphicon-home"> Home </span>
                     </div>
