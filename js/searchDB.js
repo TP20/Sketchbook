@@ -23,12 +23,15 @@ function searchPic() {
               $("#recentlyAddedSection").css("display", "none");
               $("#recentlyViewedSection").css("display", "none");
               $("#resultsSection").css("display", "block");
-              $("#resultsVideos").css("display", "block");
+              $("#resultsVideos").css("display", "flex");
+              $("#resultsVideos").css("flex-flow", "row wrap");
               var idDiv =document.getElementById("resultsVideos");
               idDiv.innerHTML = ajaxRequest.responseText;
           }
           else {
-              $("#resultsVideos").css("display", "none");
+              $("#resultsVideos").css("display", "flex");
+              $("#resultsVideos").css("flex-flow", "row wrap");
+
               $("#noresults").css("display", "block");
           }
       }        

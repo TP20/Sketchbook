@@ -31,13 +31,13 @@
                     </div>
                 </div>
             </div>
-          <div class="col-sm-12">
+         <!-- <div class="col-sm-12">
                 <div class="col-sm-12 custom-navbar-tabs" onclick="location.href ='editPictureView.php?username=<?php echo $_GET['username'] ?>'">
                     <div class="col-sm-12 custom-navbar-text">
                         <span class="glyphicon glyphicon-pencil"> Edit </span>
                     </div>
                 </div>
-            </div>
+            </div> -->
             <div class="col-sm-12">
                 <div class="col-sm-12 custom-navbar-tabs" onclick="location.href ='uploadView2.php?username=<?php echo $_GET['username'] ?>'">
                     <div class="col-sm-12 custom-navbar-text">

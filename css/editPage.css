@@ -1,5 +1,172 @@
-@media screen and (max-width: 970px) {
-    .imageSection {display:none;}
+.imageSection {
+   /* margin-left: 232px;
+*/
+}
+
+body {
+    background:black;
+}
+
+.sketchButton_container {
+    display:flex; 
+    margin:2rem; 
+    justify-content:center;
+}
+.editContainer {
+    display:flex; flex-direction: column; width: 65rem; color:white;
+}
+
+.pixlrFrame {
+    border: 1px solid rgb(227 226 226); 
+    padding:0 !important;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+}
+
+.editImage {
+    max-width:100%;
+    height:95%;
+
+}
+
+.publishButton, .viewButton {
+    /*padding:2rem 3rem; 
+    font-weight:bold; 
+    background: black; 
+    border: 1px solid #e5be00; 
+    color: #e5be00;
+    transition: 0.5s ease-in;
+    text-decoration: none;
+    width:7rem;
+    height:7rem;
+    color:white;
+    text-decoration:none; */
+    padding: 2.5rem 3rem;
+    font-weight: bold;
+    background: black;
+    border: 1px solid #e5be00;
+    color: #e5be00;
+    transition: 0.5s ease-in;
+    text-decoration: none;
+    width: 100%;
+    text-align: center;
+    height: 7rem;
+    color: white;
+    text-decoration: none;
+}
+
+.closeModal:hover {
+    cursor:pointer;
+}
+
+.publishButton a, .viewButton a {
+    color:#e5be00;
+}
+
+.publishButton>a:hover, .viewButton>a:hover {
+    color:black;
+}
+
+.publishButton:hover, .viewButton:hover  {
+    
+    text-decoration: none;
+    background:white;
+    color:black;
+    border: 1px solid black; 
+    cursor:pointer;
+
+}
+
+.imageSection {
+    display:none; 
+    margin-top:71px; 
+    z-index:2;
+    height:80%; 
+    position: absolute; 
+    left: 35%; 
+    top: 2%;
+    width:50%;
+}
+
+.imageModal {
+    position: absolute; 
+    background: #1a1717; 
+    color:white; 
+    width:65%; 
+    display: flex; 
+    flex-flow: row wrap; 
+    justify-content: center; 
+    padding: 3rem; 
+    border: 1px solid #ad7f19;
+    overflow-y:scroll;
+    height:50rem;
+}
+
+
+.imageModal::-webkit-scrollbar {
+    width: 7px;
+  }
+  
+  /* Track */
+  .imageModal::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+    height: 1rem;
+  }
+   
+  /* Handle */
+  .imageModal::-webkit-scrollbar-thumb {
+    background: #e5be00; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  .imageModal::-webkit-scrollbar-thumb:hover {
+    background: #e5be00; 
+  }
+
+.image-container {
+    height: 390px; 
+    width:65rem; 
+    display:flex; 
+    align-items:center; 
+    justify-content:center;
+}
+
+.image-container2 {
+    height: 390px; 
+    width: 65rem; 
+    border:none;
+}
+
+
+@media (min-width: 0px) and (max-width: 1024px) {
+    .sketchButton_container {
+        flex-direction:column;
+    }
+    .editContainer {
+        width:100%;
+    }
+
+    .imageModal{
+        width:100%;
+        border-radius:0;
+        height:100%;
+        overflow-y: scroll;
+    }
+
+ 
+
+    #pixlrFrame {
+        width:80%;
+        margin:0;
+        min-width: 30rem;
+    }
+
+    .image-container2, .image-container {
+        width:100%;
+    }
 }
 
 #uploadText {
@@ -14,4 +181,15 @@
 #uploadImage_text {
     text-align: center;
     display:none;
+}
+
+@media (max-width: 768px) {
+    .imageSection {
+        top:0;
+        left:0;
+        width:100%;
+        margin-top:0;
+        height:100%;
+        z-index:2;
+    }
 }

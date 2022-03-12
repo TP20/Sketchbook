@@ -1,7 +1,25 @@
 @media screen and (max-width: 832px) {
-    #searchInput{ display:none; } 
+    /*#searchInput{ display:none; } */
 /*    #custom-navbar-section{ display:none; }*/
 /*    #custom-navbar-section {display:none;}*/
-    .videoSection {z:index:2; }
+    
 /*    .videoSection {display:none}*/
+
+.videoSection {z-index:2; 
+    margin-top:8rem; }
+}
+
+
+@media (min-width:0px) and (max-width:766px) {
+    .videoSection {
+        margin-left:0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #recentlyViewedVideos, #recentlyAddedVideos {
+        display:block;
+    }
 }

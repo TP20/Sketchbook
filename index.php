@@ -1,4 +1,11 @@
 <!doctype html>
+<?php 
+if(!isset($_SESSION)) 
+{
+session_start();
+}
+?>
+
 <html>
 
 <head>
@@ -10,7 +17,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
+<meta http-equiv="Cache-control" content="public">
 </head>
 
 <body style="background-image: url('css/background.jpg'); -webkit-transform: scale(1.0); background-size: cover;">
@@ -27,7 +34,7 @@
             </nav>
           </div>
         </div>
-        <div class="col-sm-12">
+        <div class="col-sm-12 form-section">
             <div class="test">
             <img id="landingPage_logo" src="css/Sketchbook.png">
             <div>
@@ -61,7 +68,7 @@
           </div>
         </div>
         <div id="footer">
-          <p style=" font-size: 12px; font-family: 'Roboto', sans-serif; color:white; display:block; text-align:center"> <span class="glyphicon glyphicon-copyright-mark" aria-hidden="true"></span>  2016 Thujan Co, LLC
+          <p style=" font-size: 12px; font-family: 'Roboto', sans-serif; color:white; display:block; text-align:center"> <span class="glyphicon glyphicon-copyright-mark" aria-hidden="true"></span>  2021 Thujan Co, LLC
           <br> All Rights Reserved  </p>
         </div>
     <!-- </div> -->

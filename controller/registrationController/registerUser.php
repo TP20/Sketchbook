@@ -2,7 +2,7 @@
 class Register {
     
     public static function registerUser() {
-        include_once ($_SERVER["DOCUMENT_ROOT"].'/model/queries.php');
+        include_once ($_SERVER["DOCUMENT_ROOT"].'/VidTube_organize_local/model/queries.php');
         
 //        $FIELDS_ARE_SET  = isset($_POST['username']) && isset($_POST['password'])  && isset($_POST['location']) && 
 //                           isset($_POST['pNumber'])  && isset($_POST['fName']) && isset($_POST['lName']);
@@ -15,10 +15,10 @@ class Register {
         if ($FIELDS_ARE_SET && $FIELDS_NOT_BLANK) {
 //            Queries::registerUser($_POST['fName'] , $_POST['lName'] , $_POST['location'] , $_POST['pNumber'] , $_POST['username'] , $_POST['password']);
             Queries::registerUser($_POST['fName'] , $_POST['lName'] , $_POST['username'] , $_POST['password']);
-            header("Location: https://sketchbook2.000webhostapp.com/view/homePageView.php?username=".$_POST['username']."");
+            header("Location: https://localhost/VidTube_organize_local/view/homePageView.php?username=".$_POST['username']."");
         }        
         else {
-           header("Location: https://sketchbook2.000webhostapp.com/view/registrationView/registerView.html");
+           header("Location: https://localhost/VidTube_organize_local/view/registrationView/registerView.html");
         }
     }
 }

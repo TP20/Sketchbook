@@ -1,11 +1,14 @@
 <?php 
 
     $dbhost = "localhost";
-    $dbusername = "id6023722_root";
-    $dbpassword = "root123";
-    $dbname = "id6023722_sketchbook";
+    $dbusername = "root";
+    $dbpassword = "";
+    $dbname = "sketchbook";
 
     $conn = mysqli_connect($dbhost, $dbusername, $dbpassword, $dbname);
 
-
+    if (mysqli_connect_errno()) {
+        echo "Failed to connect to MySQL: " . mysqli_connect_error();
+        exit();
+      }
 ?>

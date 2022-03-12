@@ -13,6 +13,7 @@
 /*     top: 200px;*/
   	 /*padding: 1px;*/
      width: 250px;
+     margin-top:8rem;
 }
 
 .uploadDialog {
@@ -53,7 +54,7 @@ li:hover {
 }
 
 .navig li {
-     color: white;
+     color: #ffffff;
      display: inline;
 }
 
@@ -83,11 +84,29 @@ a:hover {
   margin: 0px auto;
   display:block;
 }
+.upload-button {
+     background-color: #1b0f67;
+     border: 1px solid #1b0f67;
+     transition: 0.5s ease-in;
+     color:white;
+}
 
+.upload-button:hover {
+     background:white;
+     border:1px solid #1b0f67;
+     color: #1b0f67;
+     cursor:pointer;
+}
 
-@media screen and (max-width: 400px) {
+@media (min-width:0px) and (max-width:767px) {
+     .test {
+          margin-top: 20rem;
+     }
+}
+@media screen and (max-width: 767px) {
   #headMenu { color: white; float: none ! important; padding-left: 20% ! important; position: relative ! important; top: 10% ! important; }
-  .test { position: relative; border: medium solid white; margin: 0px auto; width: 220px; padding-bottom: 2px; top: -60px; background: none repeat scroll 0% 0% white; }
-  .navig li { color: white; background: none repeat scroll 0% 0% blue; position: relative; top: 390px; left: -25px; display: block; border: 2px solid black; text-align: center; margin: 5px; padding: 0px; }
-  li:hover { padding: 0px; font-size: 14px; background: none repeat scroll 0% 0% grey; }
+  .test { position: relative; border: medium solid white; margin-top:20rem; z-index: 0; width: 300px; padding-bottom: 2px; top: -60px; background: none repeat scroll 0% 0% white; }
+ /* .navig li { color: white; background: none repeat scroll 0% 0% blue; position: relative; top: 390px; left: -25px; display: block; border: 2px solid black; text-align: center; margin: 5px; padding: 0px; }
+  */li:hover { padding: 0px; font-size: 14px; background: none repeat scroll 0% 0% grey; }
+  .form-section {height: 70rem; display: flex; flex-direction: column; align-items: center; justify-content: center; width: 100%;}
 }

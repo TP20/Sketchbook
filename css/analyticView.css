@@ -1,0 +1,108 @@
+#analyticView-section {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+   /* flex-direction: column;
+    */z-index: 0;
+}
+/*.imageSection {
+    flex-flow: row wrap;
+    margin-left:10rem;
+}
+
+*/
+
+.imageSection {
+    display:none; 
+    margin-top:71px; 
+    height:100%; 
+    position: absolute; 
+    left: 35%; 
+    top: 2%;
+}
+
+.imageModal {
+    z-index: 1;
+    position: absolute; 
+    background: #1a1717; 
+    color:white; 
+    width:65%; 
+    display: flex; 
+    flex-flow: row wrap; 
+    justify-content: center; 
+    padding: 3rem; 
+    border: 1px solid #ad7f19;
+    overflow-y:scroll;
+    height:50rem;
+}
+
+
+.imageModal::-webkit-scrollbar {
+    width: 7px;
+  }
+  
+  /* Track */
+  .imageModal::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+    height: 1rem;
+  }
+   
+  /* Handle */
+  .imageModal::-webkit-scrollbar-thumb {
+    background: #e5be00; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  .imageModal::-webkit-scrollbar-thumb:hover {
+    background: #e5be00; 
+  }
+
+
+#custom-navbar-section {
+    z-index: 1;
+}
+.viewButton_analytics {
+    padding: 2.5rem 3rem;
+    font-weight: bold;
+    background: black;
+    border: 1px solid #e5be00;
+    color: #e5be00;
+    transition: 0.5s ease-in;
+    text-decoration: none;
+    width: 45%;
+    text-align: center;
+    height: 7rem;
+    color: white;
+    text-decoration: none;
+}
+
+.viewButton_analytics a {
+    color: #e5be00;
+}
+
+.viewButton_analytics:hover {
+    text-decoration: none;
+    background:white;
+    color:black;
+    border: 1px solid black; 
+    cursor:pointer;
+}
+
+@media (min-width:0px) and (max-width:767px) {
+    .imageSection {
+        flex-flow: row wrap;
+        margin-left:0px;
+        justify-content: center;
+    }
+
+    #pixlrFrame {
+       /* height:230px; */
+       height: 357px;
+        margin-left:0;
+        width: 100%;
+        margin-top:30%;
+    }
+
+}

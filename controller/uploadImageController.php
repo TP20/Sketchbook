@@ -1,6 +1,6 @@
 <?php
 
-    include_once $_SERVER["DOCUMENT_ROOT"].'/model/queries.php';
+    include_once $_SERVER["DOCUMENT_ROOT"].'/VidTube_organize_local/model/queries.php';
     //$upload =1;
     //$allowedext= array("jpg", "png");
     $file_dir = "../Images";
@@ -38,7 +38,7 @@
         if (empty($errors)) {
             if (move_uploaded_file($tmpname, $file_dir."/".$filename)) {
                 Queries::imageUpload($_POST['username'], $_POST['title'], $_FILES['filename']['name']);
-                $URL_HOMEPAGEVIEW = "https://sketchbook2.000webhostapp.com/view/homePageView.php?username=".$_POST['username'];
+                $URL_HOMEPAGEVIEW = "https://localhost//VidTube_organize_local/view/homePageView.php?username=".$_POST['username'];
                 header("Location: ".$URL_HOMEPAGEVIEW);
             }
             else {
@@ -47,7 +47,7 @@
         }
         else {
             // $URL_HOMEPAGEVIEW = "http://thujan-sketchbook.000webhostapp.com/view/uploadView2.php?username=".$_POST['username'];
-            $URL_HOMEPAGEVIEW = "https://sketchbook2.000webhostapp.com/view/uploadViewError.php?username=".$_POST['username']."&invalidImage=".$_FILES['filename']['name'];
+            $URL_HOMEPAGEVIEW = "https://localhost/VidTube_organize_local/view/uploadViewError.php?username=".$_POST['username']."&invalidImage=".$_FILES['filename']['name'];
             header("Location: ".$URL_HOMEPAGEVIEW);
         }
 

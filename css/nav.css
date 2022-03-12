@@ -1,0 +1,33 @@
+.navbar-brand {
+    margin:0;
+}
+
+.navbar {
+    display:flex;
+    align-items: center;
+}
+
+.navbar-form {
+    margin:0;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+#searchInput {
+    padding: 0.3rem 1rem 0.3rem 1rem;
+}
+
+#custom-navbar {
+    margin-left:0px;
+}
+
+#searchInput {
+    width:100%;
+}
+
+@media (min-width:0px) and (max-width:766px) {
+    #custom-navbar {
+        margin-left:-20rem;
+    }  
+}

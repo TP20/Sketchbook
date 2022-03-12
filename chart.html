@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    </head>
+    <body>
+        <div>
+            <canvas id="myChart"></canvas>
+          </div>
+
+          <script>
+             // <block:setup:1>
+const labels = [
+  'January',
+  'February',
+  'March',
+  'April',
+  'May',
+  'June',
+];
+const data = {
+  labels: labels,
+  datasets: [{
+    label: 'My First dataset',
+    //backgroundColor: 'rgb(255, 99, 132)',
+    //borderColor: 'rgb(255, 99, 132)',
+    data: [0, 1, 2, 4, 5, 3],
+  }]
+};
+// </block:setup>
+
+// <block:config:0>
+const config = {
+  type: 'line',
+  data: data,
+  options: {}
+};
+// </block:config>
+
+/*module.exports = {
+  actions: [],
+  config: config,
+};*/
+
+var myChart = new Chart(
+    document.getElementById('myChart'),
+    config
+  );
+
+ 
+/*
+  document.getElementById('myChart').style.width ="400px";
+  document.getElementById('myChart').style.height ="400px";*/
+          </script>
+    </body>
+</html>

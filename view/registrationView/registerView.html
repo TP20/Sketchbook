@@ -4,6 +4,7 @@
 <head>
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- Optional theme -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
@@ -16,7 +17,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="https://fonts.googleapis.com/css?family=Wire+One" rel="stylesheet">
 <!-- Latest compiled and minified JavaScript -->
-
+<link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
 
 </head>
 
@@ -36,15 +37,21 @@
 
         </div>
         <div class="col-sm-4 registrationForm">
+          <div  style="
+    display: flex;
+    justify-content: center;
+    width: 100%;
+">
             <div class="col-sm-12">
               <div>
                 <img id ="logo" src="../../css/Sketchbook.png">
               </div>
             </div>
+            </div>
             <form action="../../controller/registrationController/registerUser.php" class="form-group" method="post">
               <div class="col-sm-12 form-group form-alignment">
                   <div class="col-sm-12">
-                      <p style="font-family: 'Wire One', sans-serif;"> First Name: </p>
+                      <p style="font-family: 'Roboto', sans-serif;"> First Name: </p>
                   </div>
                   <div class="col-sm-9 form-group" style="text-align:center">
                     <input class="form-control" style="width: 100%" maxlength="10" id="fName" name="fName" autocomplete="off" type="text"> <br>
@@ -52,7 +59,7 @@
               </div>
               <div class="col-sm-12 form-group form-alignment">
                   <div class="col-sm-12">
-                      <p style="font-family: 'Wire One', sans-serif;"> Last Name: </p>
+                      <p style="font-family: 'Roboto', sans-serif;"> Last Name: </p>
                   </div>
                   <div class="col-sm-9 form-group">
                     <input class="form-control" maxlength="10" name="lName" id="lName" style="width:100%" autocomplete="off" type="text">
@@ -78,7 +85,7 @@
 -->
               <div class="col-sm-12 form-group form-alignment">
                   <div class="col-sm-12">
-                    <p style="font-family: 'Wire One', sans-serif;"> User Name: </p>
+                    <p style="font-family: 'Roboto', sans-serif;"> User Name: </p>
                   </div>
                   <div class="col-sm-9 form-group has-feedback user_input">
                     <input class="form-control" maxlength="10" style="width:100%" id="user" onkeyup="validateUsername();" name="username" autocomplete="off" type="text">
@@ -87,7 +94,7 @@
               </div>
               <div class="col-sm-12 form-group form-alignment">
                   <div class="col-sm-12">
-                    <p style="font-family: 'Wire One', sans-serif;"> Password: </p>
+                    <p style="font-family: 'Roboto', sans-serif;"> Password: </p>
                   </div>
                   <div class="col-sm-9 form-group password_input">
                     <input class="form-control" maxlength="10" id="password_verify1" style="width:100%" name="password" autocomplete="off" type="password">
@@ -95,7 +102,7 @@
               </div>
               <div class="col-sm-12 form-group form-alignment">
                 <div class ="col-sm-12">
-                    <p style="font-family: 'Wire One', sans-serif;"> Re-Type Password: </p>
+                    <p style="font-family: 'Roboto', sans-serif;"> Re-Type Password: </p>
                 </div>
                 <div class="col-sm-9 form-group password_verify">
                     <input class="form-control" maxlength="10" id="password_verify2" onkeyup="passwordVerify()" name="pWord2" autocomplete="off" type="password">
@@ -111,7 +118,7 @@
         </div>
     </div>
     <div class="col-sm-12" id="footer">
-      <p style=" font-family: 'Roboto', sans-serif; color:white; display:block; text-align:center"> <span class="glyphicon glyphicon-copyright-mark" aria-hidden="true"></span>  2016 Thujan Co, LLC
+      <p style=" font-family: 'Roboto', sans-serif; color:white; display:block; text-align:center"> <span class="glyphicon glyphicon-copyright-mark" aria-hidden="true"></span>  2021 Thujan Co, LLC
       <br> All Rights Reserved  </p>
         <!-- <p style="color:white; display:block; text-align:center"> Powered by: Thujan Co
         <br> All Right Reserved  <span class="glyphicon glyphicon-copyright-mark" aria-hidden="true"></span> </p> -->

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Photoeditor SDK</title>
+
+   
+    <script src="https://pixoeditor.com/editor/scripts/bridge.m.js"></script>
+    <style>
+      body {
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <img id="myimage" src="https://localhost/VidTube_organize_local/Images/Desert.jpg" />
+    <script>
+       var image = document.getElementById('myimage');
+       /*image.onload = function(){
+          var editor = new Pixo.Bridge({apikey: '2dj7oigfkpwk'});
+          editor.edit(image);
+       }
+
+       pixo_instance.exec('INSERT_DRAW_SHAPE', { value: 'rectangle' })
+*/
+image.onload = function(){
+var editor = new Pixo.Bridge({
+  apikey: '2dj7oigfkpwk',
+  type: 'modal',
+  width: '100%',
+  height: '100%',
+  overlay: {
+      color: 'rgba( 0, 0, 0, .8 )',
+  },
+  styles: {
+      logosrc: 'https://localhost/VidTube_organize_local/Images/Desert.jpg',
+      canvasbgcolor: 'white',
+      editmenubgcolor: '#ccc',
+      actionsmenubgcolor: '#ccc',
+      propertiespanelbgcolor: '#999',
+      textcolor: 'black',
+  },
+  actions:  [{
+         caption     : 'SAVE', // You can set whatever caption you like
+         icon        : 'download', // List of available icons: https://linearicons.com/free
+         options     : [
+            {
+               caption     : 'and overwrite',
+               action      : 'SAVE_OVERWRITE', // Your custom action
+            }]
+
+        ,
+
+         onClick     : function ( action ) {
+            // In the `onClick` callback you receive the clicked action 
+            if ( action === 'SAVE_OVERWRITE' ) {
+                console.log("test")
+
+                this.cancelEditing (function(output) {
+                    output.download();
+                });
+                
+                this.saveAndClose( function(output) {
+                    output.download();
+                });
+            }
+         },
+        }]
+});
+
+
+editor.edit(image);
+}
+
+    </script>
+  </body>
+</html>

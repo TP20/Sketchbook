@@ -1,0 +1,151 @@
+#selectedPicture {
+    border: 1px rgb(239,239,239) solid;
+    background-size: contain;
+    display: block;
+    /*width: 60rem; */
+    min-width:55%;
+  /*  height: 60rem; */
+    margin-right: 2rem;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#recentlyViewedSection {
+    border: 1px rgb(239,239,239) solid; 
+    overflow:auto; 
+    max-height: 60rem; 
+    width: 35rem;
+    
+}
+#recentlyViewedSection::-webkit-scrollbar {
+    width: 7px;
+  }
+  
+  /* Track */
+  #recentlyViewedSection::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+    height: 1rem;
+  }
+   
+  /* Handle */
+  #recentlyViewedSection::-webkit-scrollbar-thumb {
+    background: #e5be00; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  #recentlyViewedSection::-webkit-scrollbar-thumb:hover {
+    background: #e5be00; 
+  }
+
+
+#clickedPicture_recentlyViewed_section {
+    display:flex;
+}
+
+#recentlyViewed_container {
+    display:block;
+}
+
+.clickedPicture_content {
+    /*width:100rem; */
+    width:100%;
+    margin-left:25rem;
+}
+
+.picture-header {
+    display:none;
+}
+
+.pictureList-section
+{
+    border-bottom:none;
+    border-top:none;
+}
+
+.commentForm {
+    width:55%;
+}
+
+.commentButton {
+    border: 1px solid #1b0f67;
+    background-color: #1b0f67;
+    transition: 0.5s ease-in;
+    color:white;
+    height: 4rem;
+    width: 15rem;
+}
+
+.commentButton:hover {
+    background-color:white;
+    cursor:pointer;
+    color: #1b0f67;
+}
+
+@media (min-width:0px) and (max-width:766px) {
+    #selectedPicture {
+        width: 40rem;
+        height: 40rem;
+        margin: 0px auto;
+    }
+
+    .clickedPicture_content {
+        width:inherit;
+    }
+
+    #recentlyViewed_container {
+        display:block;
+        margin:0px auto;
+    }
+
+    #recentlyViewedSection {
+        border: 1px rgb(239,239,239) solid; 
+        overflow:auto; 
+        max-height: 0rem;
+        width: 40rem;
+        margin-top:2rem;
+    }
+    
+
+    #clickedPicture_recentlyViewed_section {
+        flex-direction: column;
+    }
+
+    #selectedPicture {
+        width: 30rem;
+        height: 30rem;
+        margin: 0px auto;
+    }
+
+    @media (min-width:0px) and (max-width:766px) {
+        .clickedPicture_content {
+            margin-left:0px;
+        /*25rem*/
+        }
+        #selectedPicture {
+            border:none;
+            
+        }
+        .picture-header {
+            display:block;
+        }
+        .picture-header:hover {
+            cursor:pointer;
+        }
+        .pictureList-section {
+            border-top: 1px solid  #d6d1d1; border-bottom: 1px solid  #d6d1d1;
+        }
+
+        .comment-section {
+            margin: 0 4rem;
+            height: 100%;
+            background-color: white;
+        }
+
+        .commentForm {
+            width:100%;
+        }
+    }
+    
+}
